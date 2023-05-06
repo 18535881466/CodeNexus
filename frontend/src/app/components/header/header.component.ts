@@ -9,13 +9,13 @@ import { UserService } from 'src/app/service/user.service';
 export class HeaderComponent implements OnInit {
 
   userData = {}
-  title: string = "</Decoder>";
+  title: string = "CODENEXUS";
   brandClass: string = "navbar-brand text-warning";
   colorClass: string[] = ["text-primary", "text-success", "text-danger", "text-warning", "text-info"];
   username = "";
   constructor(public _userService: UserService) { }
 
-  ngOnInit(): void { 
+  ngOnInit(): void {
     this.username = this._userService.currentUser;
   }
 
